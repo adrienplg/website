@@ -1,0 +1,196 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-header h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.75em;
+}
+
+.section-header .content h1 {
+  font-size: 3.75em;
+  letter-spacing: 0.07em;
+  line-height: 1.7;
+}
+
+.section-header h5 {
+  font-style: italic;
+  text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.section-header .content h5 {
+  font-size: 1.25em;
+  margin-top: 60px;
+}
+
+.section-we-made-1 {
+  padding: 0em;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-transform: none;
+}
+
+.member {
+  margin-bottom: 3em;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+}
+.btn-primary:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 2px;
+}
+
+.btn-main-action {
+    border: solid;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+
+.btn-dl-resume {
+    text-transform: uppercase;
+    border: solid;
+    background-color: #111;
+    border-width: 1px;
+    border-color: #111;
+    border-radius: 3px;
+    color: #fff;
+}
+.btn-dl-resume:focus,
+.btn-dl-resume.focus {
+  color: #111;
+  background-color: #fff;
+  border-color: #111;
+  border-radius: 3px;
+}
+.btn-dl-resume:hover {
+  color: #111;
+  background-color: #fff;
+  border-color: #111;
+  border-radius: 3px;
+}
+
+.section .responsive-background {
+  height: 100vh;
+}
+
+.social-area > a:not(.btn) {
+  color: #777777;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 5px;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 40px;
+  text-align: center;
+}
+.social-area > a:not(.btn):hover, .footer .social-area > a:not(.btn):focus {
+  color: #777777;
+}
+
+/* Loading page section */
+.loading {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1032;
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.loading.hide {
+  display: none;
+}
+.loading .loading-container {
+  z-index: 1033;
+  display: block;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.loading .loading-container .loader {
+  width: 40px;
+}
+.loading .loading-container p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Awesome animations from https://github.com/tobiasahlin/SpinKit */
+.spinner {
+  margin: auto auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cube1, .cube2 {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
